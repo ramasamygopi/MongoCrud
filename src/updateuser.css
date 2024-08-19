@@ -1,0 +1,18 @@
+.bt-container{
+    text-align: center;
+   
+
+    
+   
+
+
+}
+.bt-container .bt{
+    padding:5px 6px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: rgba(255, 0, 0, 0.863);
+color:white;
+border: none;
+
+}

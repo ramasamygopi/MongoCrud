@@ -1,0 +1,31 @@
+h2{
+    text-align: center;
+    font-size: 22;
+}
+.mb-2  {
+
+    padding: 3px;
+
+    background-color: balck;
+}
+.mb-2 label{
+    padding: 5px;
+
+}
+
+   
+  
+.bt-container{
+    text-align: center;
+}
+.bt-container .btn{
+    padding:5px 4px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: rgba(255, 0, 0, 0.863);
+color:white;
+}
+.mb-2 input{
+    box-shadow: none;
+ 
+}

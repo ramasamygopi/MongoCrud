@@ -1,0 +1,42 @@
+.btn-container
+{
+
+
+text-align: right;
+margin-right: 30px;
+
+
+}
+.btn{
+    padding: 5px 10px;
+    width: 80px;
+    border-radius: 5px;
+}
+.btnu{
+    padding: 5px 10px;
+    background-color: cornflowerblue;
+    border: none;
+    color:white;
+    border-radius: 5px;
+
+
+}
+.btnd{
+    padding: 5px 10px;
+    margin-left: 5px;
+background-color: rgba(255, 0, 0, 0.863);
+    color:white;
+    border: none;
+    border-radius: 5px;
+}
+table th,td{
+    text-align: center;
+ 
+    border: 1px solid black;
+
+}
+
+.w-50 bg-white rounded p-3{
+    border-radius: 50px;
+}
+
