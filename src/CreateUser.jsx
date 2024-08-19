@@ -9,7 +9,7 @@ const CreateUser = () => {
 const navigate=useNavigate('')
   const submit = (e) => {
     e.preventDefault();
-    axios.post('https://mongocrud-bczd.onrender.com/CreateUser', { name, email, age })
+    axios.post(`${process.env.VITE_SERVER_URL}/CreateUser`, { name, email, age })
       .then(result => {
         console.log(result)
        navigate('/')   
