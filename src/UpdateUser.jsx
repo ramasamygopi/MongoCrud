@@ -12,7 +12,7 @@ import './updateuser.css'
   const [age, setAge] = useState('');
 const navigate=useNavigate()
 useEffect(()=>{
-  axios.get('http://localhost:3001/getUser/'+id)
+  axios.get('https://mongocrud-bczd.onrender.com/getUser/'+id)
   .then(result=>{
     console.log(result)
     setName(result.data.name)
@@ -25,7 +25,7 @@ useEffect(()=>{
   )
   const Update=(e)=>{
 e.preventDefault();
-axios.put('http://localhost:3003/UpdateUser/'+id, { name, email, age })
+axios.put('https://mongocrud-bczd.onrender.com/UpdateUser/'+id, { name, email, age })
 .then(result => {
   console.log(result)
  navigate('/')   
