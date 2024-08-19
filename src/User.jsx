@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './User.css';
 import {Link} from 'react-router-dom'
 import axios from 'axios';
+const serverUrl = import.meta.env.VITE_SERVER_URL;
 
 const User = () => {
   const [users, setUsers] = useState([]);
@@ -12,7 +13,7 @@ const User = () => {
 },[]
   )
   const handleDelete=(id)=>{
-    axios.delete(`${process.env.VITE_SERVER_URL}/deleteUser/`+id)
+    axios.delete(`${serverUrl}/deleteUser/`+id)
 .then(res=>{console.log(res)
   window.location.reload()
 })

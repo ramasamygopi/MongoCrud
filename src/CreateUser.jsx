@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
 import './createuser.css';
+const serverUrl = import.meta.env.VITE_SERVER_URL;
+
 const CreateUser = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -9,7 +11,7 @@ const CreateUser = () => {
 const navigate=useNavigate('')
   const submit = (e) => {
     e.preventDefault();
-    axios.post(`${process.env.VITE_SERVER_URL}/CreateUser`, { name, email, age })
+    axios.post(`${serverUrl }/CreateUser`, { name, email, age })
       .then(result => {
         console.log(result)
        navigate('/')   

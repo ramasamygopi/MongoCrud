@@ -5,6 +5,11 @@ import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
 import { useEffect } from 'react';
 import './updateuser.css'
+
+
+
+const serverUrl = import.meta.env.VITE_SERVER_URL;
+
  const UpdateUser = () => {
   const {id}=useParams()
   const [name, setName] = useState('');
@@ -12,7 +17,7 @@ import './updateuser.css'
   const [age, setAge] = useState('');
 const navigate=useNavigate()
 useEffect(()=>{
-  axios.get(`${process.env.VITE_SERVER_URL}/getUser/`+id)
+  axios.get(`${serverUrl}/getUser/`+id)
   .then(result=>{
     console.log(result)
     setName(result.data.name)
