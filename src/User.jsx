@@ -7,7 +7,7 @@ const serverUrl = import.meta.env.VITE_SERVER_URL;
 const User = () => {
   const [users, setUsers] = useState([]);
   useEffect(()=>{
-  axios.get(`${process.env.VITE_SERVER_URL}`)
+  axios.get(`${serverUrl}`)
   .then(result=>setUsers(result.data))
 .catch(err=>console.log(err)) 
 },[]
